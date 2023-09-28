@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+  font-family: var(--font-inter);
+}
+
+.form {
+  @apply flex w-full flex-col items-center justify-center gap-2;
+}
+
+.form-group {
+  @apply flex w-full flex-col gap-1;
+}
+
+.form-label {
+  @apply text-lg font-semibold;
+}
+
+.form-button {
+  @apply rounded-md bg-gray-950 px-6 py-3 text-gray-50;
+}
+
+.cards {
+  @apply mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.card {
+  @apply w-full max-w-sm overflow-hidden rounded-lg shadow-lg;
+}
+
+.card__image-container {
+  @apply flex-shrink-0;
+}
+
+.card__image {
+  @apply h-48 w-full object-cover;
+}
+
+.card__image-2 {
+  @apply h-96 w-full object-cover;
+}
+
+.card__content {
+  @apply flex flex-1 flex-col gap-2 p-6;
+}
+
+.card__content-2 {
+  @apply flex flex-1 flex-col gap-2 p-6 px-0;
+}
+
+.card__date-category {
+  @apply flex items-center justify-start gap-4 text-sm font-medium leading-5 text-gray-600;
+}
+
+.card__date {
+  @apply rounded-md bg-red-700 px-2 py-1 capitalize text-red-50;
+}
+
+.card__category {
+  @apply rounded-md bg-purple-800 px-2 py-1 capitalize text-purple-50;
+}
+
+.card__title {
+  @apply mt-2 text-xl font-semibold capitalize leading-7 text-gray-900;
+}
+
+.card__description {
+  @apply text-base leading-6 text-gray-600;
+}
+
+.card__link {
+  @apply w-max rounded-md bg-green-800 px-4 py-2 capitalize text-green-50;
+}
+
+.sidebar__title {
+  @apply text-3xl font-bold;
+}
+
+.sidebar__nav {
+  @apply mt-4;
+}
+
+.sidebar__ul {
+  @apply flex w-full flex-col items-start justify-center gap-1;
+}
+
+.sidebar__list {
+  @apply w-full;
+}
+
+.sidebar__link {
+  @apply inline-flex w-full bg-gray-950 px-4 py-2 capitalize text-gray-50;
+}
+
+.single__blog-layout {
+  @apply my-6 flex items-start justify-between gap-6;
+}
